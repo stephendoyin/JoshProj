@@ -1,0 +1,37 @@
+.input {
+  height: 50px;
+  z-index: 12;
+  border: none;
+  width: 80%;
+  &:focus {
+    outline: none;
+    /* border: 1px solid var(--primary); */
+  }
+  &__container {
+    background: #ffffff;
+    border: 1px solid #949494;
+    border-radius: 5px;
+    max-height: 50px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &::placeholder {
+    color: #949494;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 50;
+  }
+  &__label {
+    font-size: 18px;
+    line-height: 50px;
+    padding-top: 7px;
+    padding-right: 5px;
+    white-space: nowrap;
+  }
+  &__radio-container {
+    padding: 16px 13px;
+  }
+}

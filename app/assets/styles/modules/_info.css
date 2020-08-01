@@ -1,0 +1,27 @@
+.info {
+  margin-top: 42px;
+  &__item {
+    width: 18.4%;
+    border-radius: 5px;
+    padding: 14px 16px;
+
+    &--flexed {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__label {
+    font-size: 14px;
+    color: #b9b9b9;
+    font-weight: 400;
+  }
+  &__content {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.c-container {
+  padding: 0 42px;
+}

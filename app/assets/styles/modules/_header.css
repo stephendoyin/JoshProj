@@ -1,0 +1,15 @@
+.c-header {
+  &__link {
+    color: #949494;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    &:hover {
+      text-decoration: none !important;
+    }
+    &--active {
+      color: var(--primary);
+      border-bottom: 2px solid var(--primary);
+    }
+  }
+}

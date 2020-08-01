@@ -1,0 +1,34 @@
+.modal {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: rgba(0, 0, 0, 0.62);
+  overflow: auto;
+  display: none;
+  padding: 50px 0;
+
+  &__show {
+    display: flex;
+  }
+
+  &__content {
+    max-width: 605px;
+    background: #fff;
+    padding: 32px 0;
+    position: relative;
+  }
+
+  &__info {
+    padding: 16px 12px;
+    background: #e5e5e5;
+  }
+
+  &__close {
+    position: absolute;
+    top: 6px;
+    right: 7px;
+    cursor: pointer;
+  }
+}

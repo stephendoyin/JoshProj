@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: black;
+}
+body {
+  font-family: "Open sans", sans-serif;
+  background: #f9f9f9;
+  min-height: 100vh;
+}
+.title {
+  font-weight: 600;
+}
+.bg-success {
+  background: var(--light-green) !important;
+}
+.big-dot {
+  font-size: 4rem;
+  line-height: -0;
+}
+.badge::before {
+  content: "";
+  display: inline-block;
+  height: 7px;
+  width: 7px;
+  vertical-align: middle;
+  border-radius: 50%;
+  transform: translateY(-1px);
+  position: relative;
+  background: inherit;
+  margin-right: 6px;
+}
+
+.badge.bg-success::before {
+  background: var(--green);
+}
+.badge.bg-warning::before {
+  background: var(--warning);
+}
+.badge.bg-danger::before {
+  background: var(--danger);
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+
+  &__sub {
+    font-size: 18px;
+  }
+}
+
+p {
+  color: rgba(0, 0, 0, 0.56);
+  font-size: 14px;
+  line-height: 19px;
+}
+
+button.btn-custom {
+  height: 50px;
+}
+
+.form-check-input {
+  position: absolute;
+  margin-top: 0.4rem;
+  margin-left: 0.5rem;
+}
+
+.form-check-label {
+  font-size: 14px;
+}
+
+.form-check:last-child {
+  padding-right: 16px;
+}
+
+.custom-checkbox .custom-control-label::before {
+  border-radius: 2px;
+}
+
+.bg-warning {
+  background: rgba(250, 233, 83, 0.33) !important;
+}
+
+.bg-danger {
+  background: rgba(247, 113, 113, 0.33) !important;
+}

@@ -23,8 +23,14 @@ task("watch", function (cb) {
     cb();
   });
 
-  //restart the services page if there is any change
+  //restart the settings page if there is any change
   watch("./app/settings.html", function (cb) {
+    browserSync.reload();
+    cb();
+  });
+
+  //restart the 404 page if there is any change
+  watch("./app/404.html", function (cb) {
     browserSync.reload();
     cb();
   });

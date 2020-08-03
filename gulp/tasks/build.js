@@ -37,7 +37,7 @@ gulp.task("copyGeneralFiles", function () {
 
 gulp.task("usemin", function () {
   return gulp
-    .src(["./app/index.html", "./app/settings.html"])
+    .src(["./app/index.html", "./app/settings.html", "./app/404.html"])
     .pipe(
       usemin({
         css: [
